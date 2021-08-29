@@ -1,0 +1,61 @@
+{
+  "siteMenu": {
+    "items": [
+      { 
+        "label": "Home",
+        "className" : "nav-item",
+        "linkTo" : "/"
+      },
+      { 
+        "label": "About",
+        "className" : "nav-item",
+        "linkTo" : "/about"
+      },
+      { 
+        "label": "Users",
+        "className" : "nav-item",
+        "linkTo" : "/users"
+      },
+      { "label": "Dropdown 1",
+        "className" : "dropdown",
+        "dropdownItems" : [
+          { 
+            "label": "Action",
+            "className" : "dropdown-item"
+          },
+          { 
+            "label": "Another Action",
+            "className" : "dropdown-item"
+          },
+          { 
+            "label": "Something Else",
+            "className" : "dropdown-item"
+          }
+
+        ]
+      },
+      { 
+        "label": "Link 2",
+        "className" : "nav-item"
+      },
+      { "label": "Dropdown 2",
+        "className" : "dropdown",
+        "dropdownItems" : [
+          { 
+            "label": "Action",
+            "className" : "dropdown-item"
+          },
+          { 
+            "label": "Another Action",
+            "className" : "dropdown-item"
+          },
+          { 
+            "label": "Something Else",
+            "className" : "dropdown-item"
+          }
+
+        ]
+      }
+    ]
+  }
+}

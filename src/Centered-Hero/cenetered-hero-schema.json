@@ -1,0 +1,164 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "content": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "paragraph": {
+            "type": "string"
+          },
+          "image": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "source",
+              "width",
+              "height"
+            ]
+          }
+        },
+        "required": [
+          "title",
+          "paragraph",
+          "image"
+        ]
+      },
+      "buttons": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "bootstrap": {
+                "type": "object",
+                "properties": {
+                  "buttonStyle": {
+                    "type": "string"
+                  },
+                  "outline": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "buttonStyle",
+                  "outline"
+                ]
+              },
+              "href": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "bootstrap",
+              "href"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "bootstrap": {
+                "type": "object",
+                "properties": {
+                  "buttonStyle": {
+                    "type": "string"
+                  },
+                  "outline": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "buttonStyle",
+                  "outline"
+                ]
+              }
+            },
+            "required": [
+              "label",
+              "bootstrap"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "bootstrap": {
+                "type": "object",
+                "properties": {
+                  "buttonStyle": {
+                    "type": "string"
+                  },
+                  "outline": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "buttonStyle",
+                  "outline"
+                ]
+              }
+            },
+            "required": [
+              "label",
+              "bootstrap"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "bootstrap": {
+                "type": "object",
+                "properties": {
+                  "buttonStyle": {
+                    "description": "Defines one of pre-defined type of button by bootstrap.",  
+                    "type": "string",
+                    "enum": ["primary", "secondary", "success", "danger", "warning", "info", "light", "dark", "link"]
+                  },
+                  "outline": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "buttonStyle",
+                  "outline"
+                ]
+              }
+            },
+            "required": [
+              "label",
+              "bootstrap"
+            ]
+          }
+        ]
+      }
+    },
+    "required": [
+      "content",
+      "buttons"
+    ]
+  }
